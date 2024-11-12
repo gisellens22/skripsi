@@ -1,0 +1,31 @@
+.sidebar {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.content {
+    overflow: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}

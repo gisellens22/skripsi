@@ -1,0 +1,122 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang */
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0077b6; /* Warna latar sidebar */
+    color: #fff; /* Warna teks di sidebar */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff; /* Warna tautan di sidebar */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #a2d2ff; /* Warna latar saat hover */
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* Warna latar konten */
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    color: #333; /* Warna teks judul konten */
+}
+
+/* Tabel */
+.content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; /* Spacing antar sel tabel */
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Warna latar belakang tabel */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk memberi efek mengangkat */
+}
+
+.content table th,
+.content table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; /* Jarak yang sistematis untuk sel tabel */
+    text-align: left;
+    vertical-align: middle; /* Mengatur teks vertikal di tengah */
+}
+
+.content table th {
+    background-color: #00a8e8;
+    color: #fff;
+    text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+    font-weight: 600; /* Menebalkan teks header */
+}
+
+.content table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar berbeda untuk baris genap */
+}
+
+.content table tr:hover {
+    background-color: #e0f7fa; /* Warna latar saat hover pada baris */
+}
+
+/* Button Logout */
+button {
+    background-color: #e74c3c; /* Warna latar tombol logout */
+    color: #fff; /* Warna teks tombol logout */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b; /* Warna latar saat hover tombol logout */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
