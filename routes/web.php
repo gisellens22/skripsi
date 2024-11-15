@@ -8,6 +8,9 @@ use App\Http\Controllers\BillController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\IndexController;
+
+
 
 // Authentication Routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -83,6 +86,7 @@ Route::get('/studentsusers/bill', [StudentController::class, 'studentBills'])
 
 Route::get('/students/search', [StudentController::class, 'search'])->name('students.search');
 
+Route::get('/index', [IndexController::class, 'index']);
 
 
 // Home Route

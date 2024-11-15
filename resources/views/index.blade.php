@@ -60,7 +60,7 @@
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#team">REGISTER</a></li>
-            <li><a href="{{ route('auth.login') }}">LOGIN</a></li>
+            <li><a href="{{ route('login') }}">LOGIN</a></li>
             
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
