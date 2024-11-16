@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/BCIL2.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('images/icons/BCIL2.png') }}" rel="icon">
+  <link href="{{ asset('images/icons/BCIL2.png') }}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,11 +18,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{ asset('vendorindex/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('vendorindex/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('vendorindex/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ asset('vendorindex/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('vendorindex/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
@@ -59,7 +59,7 @@
             <li><a href="#portfolio">Teachers</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#team">REGISTER</a></li>
+            <li><a href="{{ route('register.create') }}">REGISTER</a></li>
             <li><a href="{{ route('login') }}">LOGIN</a></li>
             
           </ul>
@@ -76,7 +76,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/Pict/rombongan.png" alt="" data-aos="fade-in">
+      <img src="{{ asset('images/Pict/rombongan.png') }}" alt="" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-start">
@@ -105,7 +105,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/Pict/2 bocil.png" class="img-fluid" alt="">
+            <img src="{{ asset('images/Pict/2 bocil.png') }}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
@@ -322,91 +322,91 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/teacher/Mamak.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Mamak.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Meiliana Tirtadjaya</h4>
                 <p>Strata-1 Pendidikan dan Keguruan Bahasa Inggris (S.Pd)</p>
-                <a href="assets/img/teacher/Mamak.png" title="Meiliana Tirtadjaya" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Mamak.png') }}" title="Meiliana Tirtadjaya" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/teacher/Bella.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Bella.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Bella Maidiya Putri</h4>
                 <p>Strata-1 Pendidikan Bahasa Inggris (S.Pd)</p>
-                <a href="assets/img/teacher/Bella.png" title="Bella Maidiya Putri" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Bella.png') }}" title="Bella Maidiya Putri" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/teacher/Herna.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Herna.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Herna Marlindawati</h4>
                 <p>Strata-1 Pendidikan Bahasa Inggris (S.Pd)</p>
-                <a href="assets/img/teacher/Herna.png" title="Herna Marlindawati" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Herna.png') }}" title="Herna Marlindawati" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/teacher/Pika.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Pika.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Repika Ayu Selvia</h4>
                 <p>Strata-1 Pendidikan Bahasa Inggris (S.Pd)</p>
-                <a href="assets/img/teacher/Pika.png" title="Repika Ayu Selvia" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Pika.png') }}" title="Repika Ayu Selvia" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/teacher/wulan.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/wulan.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Wulansari Putri Herda</h4>
                 <p>Strata-1 Pendidikan Bahasa Inggris (S.Pd)</p>
-                <a href="assets/img/teacher/wulan.png" title="Wulansari Putri Herda" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/wulan.png') }}" title="Wulansari Putri Herda" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/teacher/amel.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/amel.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Amelia Yuni Saputri</h4>
                 <p>Strata-1 Pendidikan Fisika </p>
-                <a href="assets/img/teacher/amel.png" title="Amelia Yuni Saputri" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/amel.png') }}" title="Amelia Yuni Saputri" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/teacher/Arif.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Arif.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Arif Hadi Prayogo</h4>
                 <p>Strata-1 Pendidikan Fisika </p>
-                <a href="assets/img/teacher/Arif.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Arif.png') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/teacher/umi.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/umi.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Umi Muslikhatun</h4>
                 <p>Strata-1 Matematika (S.si)</p>
-                <a href="assets/img/teacher/umi.png" title="Umi Muslikhatun" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/umi.png') }}" title="Umi Muslikhatun" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/teacher/Heni.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/Heni.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Heni Ayu Pertiwi</h4>
                 <p>Strata-1 Matematika (S.si)</p>
-                <a href="assets/img/teacher/Heni.png" title="Heni Ayu Pertiwi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/Heni.png') }}" title="Heni Ayu Pertiwi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
-              <img src="assets/img/teacher/ayu.png" class="img-fluid" alt="">
+              <img src="{{ asset('images/teacher/ayu.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Desi Ayu Ardaliana</h4>
                 <p>Strata-1 Komunikasi dan Penyiaran Islam (S.Sos)</p>
-                <a href="assets/img/teacher/ayu.png" title="Branding 1" data-gallery="portfolio-gallery-other" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('images/teacher/ayu.png') }}" title="Branding 1" data-gallery="portfolio-gallery-other" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -626,16 +626,16 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="{{ asset('vendorindex/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('vendorindex/php-email-form/validate.js') }}"></script>
+  <script src="{{ asset('vendorindex/aos/aos.js') }}"></script>
+  <script src="{{ asset('vendorindex/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('vendorindex/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('vendorindex/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ asset('vendorindex/isotope-layout/isotope.pkgd.min.js') }}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('jsindex/main.js') }}"></script>
 
 </body>
 

@@ -9,7 +9,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
-
+use App\Http\Controllers\RegisterController;
 
 
 // Authentication Routes
@@ -84,9 +84,21 @@ Route::get('/studentsusers/bill', [StudentController::class, 'studentBills'])
     ->name('studentsusers.bill')
     ->middleware('auth');
 
+// Menampilkan form pendaftaran
+//Route::get('/register', [RegisterController::class, 'showForm'])->name('register.form');
+
+// Menyimpan data pendaftaran
+//Route::post('/register', [RegisterController::class, 'register'])->name('register.store');
+
+
+Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
 Route::get('/students/search', [StudentController::class, 'search'])->name('students.search');
 
 Route::get('/index', [IndexController::class, 'index']);
+
+Route::post('/students/stores', [StudentController::class, 'stores'])->name('students.stores');
 
 
 // Home Route

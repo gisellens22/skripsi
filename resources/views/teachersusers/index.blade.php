@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
+    <link href="{{ asset('images/icons/BCIL2.png') }}" rel="icon">
+    <link href="{{ asset('images/icons/BCIL2.png') }}" rel="apple-touch-icon">
     <link rel="stylesheet" href="{{ asset('css/teacherfirst.css') }}"> <!-- Link ke file CSS -->
 </head>
 <body>

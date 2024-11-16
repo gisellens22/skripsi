@@ -157,6 +157,43 @@ class StudentController extends Controller
         }
     }
 
+
+
+    public function stores(Request $request)
+    {
+        $request->validate([
+            'student_name' => 'required|string|max:255',
+            'student_grade' => 'required|string|max:255',
+            'student_email' => 'required|email|max:255',
+            'student_address' => 'required|string|max:255',
+            'student_phone' => 'required|string|max:20',
+            'student_dob' => 'required|date',
+            'student_regist_date' => 'required|date',
+            'type_id' => 'required|exists:types,type_id',
+            'school_id' => 'required|exists:schools,school_id',
+        ]);
+
+        try {
+            $student = new Student();
+            $student->student_name = $request->input('student_name');
+            $student->student_grade = $request->input('student_grade');
+            $student->student_email = $request->input('student_email');
+            $student->student_address = $request->input('student_address');
+            $student->student_phone = $request->input('student_phone');
+            $student->student_dob = $request->input('student_dob');
+            $student->student_regist_date = $request->input('student_regist_date');
+            $student->type_id = $request->input('type_id');
+            $student->school_id = $request->input('school_id');
+            $student->save();
+
+            Log::info('Student created successfully: ', ['student_id' => $student->student_id]);
+
+            return redirect()->route('index')->with('success', 'Regist created successfully.');
+        } catch (\Exception $e) {
+            Log::error('Failed to create Regist: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Failed to create Regist.');
+        }
+    }
     /**
      * Menampilkan form untuk mengedit siswa.
      *
