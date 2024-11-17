@@ -32,6 +32,7 @@
                 <th>Day</th>
                 <th>Time</th>
                 <th>Teacher</th>
+                <th>Subject</th>
             </tr>
         </thead>
         <tbody>
@@ -40,6 +41,15 @@
                     <td>{{ $schedule->schedule_day }}</td>
                     <td>{{ $schedule->schedule_time }}</td>
                     <td>{{ $schedule->teacher->teacher_name ?? 'N/A'}}</td>
+                    <td>
+                        @if($schedule->teacher && $schedule->teacher->subjects->isNotEmpty())
+                            @foreach($schedule->teacher->subjects as $subject)
+                                {{ $subject->subject_name }}<br>
+                            @endforeach
+                        @else
+                            N/A
+                        @endif
+                    </td>
                 </tr>
             @endforeach
         </tbody>
