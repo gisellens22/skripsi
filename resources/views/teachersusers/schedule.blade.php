@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="{{ asset('css/teacherschedule.css') }}"> <!-- Link ke file CSS -->
+    <link href="{{ asset('images/icons/BCIL2.png') }}" rel="icon">
+    <link href="{{ asset('images/icons/BCIL2.png') }}" rel="apple-touch-icon">
 </head>
 <body>
     <div class="sidebar">

@@ -31,7 +31,7 @@
                 <option value="UNPAID" {{ $bill->bill_status == 'UNPAID' ? 'selected' : '' }}>UNPAID</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Update Bill</button>
         <a href="{{ route('bills.index') }}" class="btn btn-secondary">Cancel</a>
     </form>
 </div>

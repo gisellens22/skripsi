@@ -33,7 +33,7 @@
                     @endforeach
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Add User</button>
+            <button type="submit" class="btn btn-primary">Create User</button>
         </form>
     </div>
 @endsection

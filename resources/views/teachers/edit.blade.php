@@ -72,7 +72,7 @@
             @endforeach
         </select>
     </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Update Teacher</button>
     </form>
 </div>
 @endsection

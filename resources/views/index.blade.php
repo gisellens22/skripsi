@@ -119,7 +119,7 @@
               <li><i class="bi bi-check-circle"></i> <span>Certification for Each Level (B-CIL Course Program)</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Help with School English Assignments</span></li>
             </ul>
-            <a href="#" class="read-more"><span>Register Now!</span><i class="bi bi-arrow-right"></i></a>
+            <a href="{{ route('register.create') }}" class="read-more"><span>Register Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>

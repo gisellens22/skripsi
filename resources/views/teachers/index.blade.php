@@ -15,7 +15,7 @@
         <ul>
             <li><a href="{{ route('schedules.index') }}">Manage Schedules</a></li>
             <li><a href="{{ route('bills.index') }}">Manage Bills</a></li>
-            <li><a href="{{ route('students.index') }}">Manage Student Data</a></li>
+            <li><a href="{{ route('students.index') }}">Manage Students Data</a></li>
             <li><a href="{{ route('teachers.index') }}">Manage Teachers Data</a></li>
             <li><a href="{{ route('users.index') }}">Manage User and Role</a></li>
             <li><a href="{{  route('adminfirst') }}">Back</a></li>

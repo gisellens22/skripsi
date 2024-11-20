@@ -28,7 +28,7 @@
                 <option value="UNPAID">UNPAID</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create Bill</button>
         <a href="{{ route('bills.index') }}" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
